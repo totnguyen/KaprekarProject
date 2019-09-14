@@ -40,6 +40,8 @@ int isKaprekar(int n) {
   for(i=1; i<=numDigits; i++) {
     //increase the modulus by a factor of 10
     modulus *= 10;
+    modulus *= 100;
+    modulus *= 1000;
 
     //split the square into two parts
     first = square / modulus;
